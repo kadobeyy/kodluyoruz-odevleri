@@ -1,0 +1,612 @@
+:root {
+    --page-color: #FF383D;
+    --writer-color: #035755;
+    --paragraf-color: #4B4F51;
+}
+
+
+body {
+
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.red__button {
+
+    background: #FB4C47;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    display: inline-block;
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: normal;
+    padding: 14px 36px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 29px;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #FB4C47;
+        border: 2px solid var(--page-color);
+
+        background-color: #FFF;
+    }
+
+    &--pink {
+        background: rgba(250, 86, 82, 0.15);
+        color: var(--page-color);
+        font-size: 20px;
+        line-height: 24px;
+        font-style: bold;
+
+        text-transform: capitalize;
+
+    }
+}
+
+
+.active {
+    margin-right: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--page-color) !important;
+    position: relative;
+    pointer-events: none;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    background: var(--page-color);
+    border: 1px solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    bottom: -9px;
+    left: auto;
+    right: 50%;
+    border-radius: 50%;
+}
+
+
+.header {
+    margin-top: 30px;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__navitems a {
+
+        color: var(--writer-color);
+        text-decoration: none;
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        margin-right: 25px;
+
+        &.nav__navbar--button {
+            color: var(--page-color);
+            padding: 16px 45px;
+            border: 2px solid #FB4C47;
+            box-sizing: border-box;
+            border-radius: 46px;
+
+            &:hover {
+                background-color: var(--page-color);
+                color: #FFF;
+
+            }
+        }
+    }
+
+
+}
+
+.section1 {
+
+    &__text {
+        width: 100%;
+
+        margin-top: 180px;
+        font-style: normal;
+    }
+
+    &__text h1.title {
+
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 139%;
+        /* or 72px */
+
+        text-transform: capitalize;
+
+        color: #035755;
+
+        opacity: 0.5;
+
+        margin-bottom: 15px;
+        margin-top: 5px;
+
+        &::before {
+            content: "COVID-19 Alert";
+            font-family: Red Hat Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 122%;
+            color: var(--page-color);
+
+
+
+        }
+
+    }
+
+    &__text.paragraph {
+
+        font-family: Gelion;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 190%;
+        color: #FFF;
+        text-transform: capitalize;
+        color: var(--paragraf-color);
+    }
+
+    &__image {
+        margin-top: 59px;
+        width: 100%;
+    }
+}
+
+.section2 {
+    &__text2 {
+
+        width: 100%;
+
+        font-style: normal;
+    }
+
+    &__text2 h1.title2 {
+        padding-top: 90px;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 139%;
+
+
+        text-transform: capitalize;
+
+        color: var(--writer-color);
+
+
+
+        &::before {
+            content: "What Is Covid-19";
+            font-family: Red Hat Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 29px;
+            line-height: 124%;
+            /* or 36px */
+            color: #FA5652;
+            color: var(--page-color);
+
+
+
+        }
+
+    }
+
+    &__text2.paragraph2 {
+
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 215%;
+        text-transform: capitalize;
+        color: var(--paragraf-color);
+    }
+
+    &__img2 {
+        width: 100%;
+    }
+
+
+}
+
+.section3 {
+
+    & h1.title3 {
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 119%;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        color: var(--writer-color);
+
+
+
+        &::before {
+            content: "Covid-19";
+            font-family: Red Hat Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 29px;
+            line-height: 124%;
+            /* or 36px */
+            color: #FA5652;
+            color: var(--page-color);
+
+
+
+        }
+    }
+
+    & p.paragraph3 {
+        margin-bottom: -20px;
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 215%;
+        /* or 39px */
+
+        text-align: center;
+        text-transform: capitalize;
+
+        color: #4B4F51;
+    }
+}
+
+.card__corona {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    &__card {
+        padding-left: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+        border-radius: 10px;
+     
+
+        &--h4{
+        text-align: center;
+        padding-bottom: 10px;
+        }
+
+        &--p{
+            text-align: center;
+            padding-bottom: 40px;
+
+        }
+    }
+ 
+    &__card--img {
+       margin-left:15%;
+       padding-top: 45px;
+       margin-bottom: 20px;
+    }
+    &__card--img2 {
+        margin-left:15%;
+        margin-bottom: 20px;
+      
+     }
+}
+
+.blog1 {
+    margin-top: 230px;
+
+    &__baslik {
+        max-width: 100%;
+        padding-left: 20px;
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 47px;
+        line-height: 147%;
+
+        text-transform: capitalize;
+        position: relative;
+        color: #035755, 100%;
+
+        &2 {
+            max-width: 100%;
+            padding-left: 20px;
+            font-family: Gelion;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 47px;
+            line-height: 147%;
+
+            text-transform: capitalize;
+            position: relative;
+            color: #035755, 100%;
+
+            &::before {
+                content: "02";
+                font-family: Red Hat Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 145%;
+                text-align: center;
+                padding-top: 8px;
+                /* or 64px */
+
+                text-transform: capitalize;
+
+                color: #FA5652;
+                background-color: rgba(250, 86, 82, 0.28);
+                right: 100%;
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                border-radius: 100%;
+            }
+        }
+
+        &3 {
+            max-width: 100%;
+            padding-left: 20px;
+            font-family: Gelion;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 47px;
+            line-height: 147%;
+
+            text-transform: capitalize;
+            position: relative;
+            color: #035755, 100%;
+
+            &::before {
+                content: "03";
+                font-family: Red Hat Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 145%;
+                text-align: center;
+                padding-top: 8px;
+                /* or 64px */
+
+                text-transform: capitalize;
+
+                color: #FA5652;
+                background-color: rgba(250, 86, 82, 0.28);
+                right: 100%;
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                border-radius: 100%;
+            }
+        }
+
+        &4 {
+            max-width: 100%;
+            padding-left: 20px;
+            font-family: Gelion;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 47px;
+            line-height: 147%;
+
+            text-transform: capitalize;
+            position: relative;
+            color: #035755, 100%;
+
+            &::before {
+                content: "04";
+                font-family: Red Hat Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 145%;
+                text-align: center;
+                padding-top: 8px;
+                /* or 64px */
+
+                text-transform: capitalize;
+
+                color: #FA5652;
+                background-color: rgba(250, 86, 82, 0.28);
+                right: 100%;
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                border-radius: 100%;
+            }
+        }
+
+        &::before {
+            content: "01";
+            font-family: Red Hat Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 145%;
+            text-align: center;
+            padding-top: 8px;
+            /* or 64px */
+
+            text-transform: capitalize;
+
+            color: #FA5652;
+            background-color: rgba(250, 86, 82, 0.28);
+            right: 100%;
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+        }
+    }
+
+
+    &__text {
+        padding-left: 20px;
+
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 221%;
+
+        text-transform: capitalize;
+
+        color: #4B4F51;
+    }
+
+    &__img {
+        width: 100%;
+        margin-top: 30px;
+
+        &2 {
+            margin-left: -100px;
+        }
+    }
+
+}
+
+.section__input {
+
+    &__text {
+        margin-top: -250px;
+        align-items: center;
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 77px;
+        text-align: center;
+
+        color: #0C6C44;
+    }
+}
+
+
+.footer__media {
+    padding-top: 18px;
+    padding-left: 70%;
+}
+
+.footer__nav {
+    padding-top: 18px;
+
+    & a {
+
+        color: var(--writer-color);
+        text-decoration: none;
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        margin-right: 20px;
+    }
+}
+
+.footer__info {
+    margin-left: 33.5%;
+    margin-bottom: 5px;
+}
+
+.footer-form {
+
+
+
+    & form input.place {
+        height: 114px;
+        width: 790px;
+        margin-top: 25px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+        border-radius: 57px;
+        margin-left: 130px;
+        color: #000;
+        padding-left: 30px;
+
+        &:focus {
+            border: none;
+
+        }
+
+    }
+
+    & form input.submit-button {
+        background: #F44A45;
+        border-radius: 157px;
+        font-family: Gelion;
+        font-style: normal;
+        padding: 26px 80px;
+        border: none;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-decoration: none;
+
+        color: #FFFFFF;
+    }
+
+}
+
+
+@media (max-width: 720px) {
+
+    .blog1__img {
+        width: 100%;
+        margin-top: 30px;
+
+        &2 {
+            margin-left: 0px;
+        }
+    }
+
+    .section1 {
+        text-align: center;
+    }
+
+    .section1__text {
+        margin-top: 50px;
+    }
+
+    .section1__image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .section1 .paragraph {
+        margin-bottom: 40px;
+    }
+
+    .section2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section2__text2 {
+
+        margin: 0px;
+    }
+
+    .section2__image2 {
+        margin-bottom: -50px;
+        display: inline;
+    }
+
+
+}
